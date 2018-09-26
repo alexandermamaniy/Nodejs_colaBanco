@@ -22,6 +22,8 @@ var lbEscritorios = [
 ]
 
 socket.on('estadoActual', (data) => {
+  var audio = new Audio('audio/new-ticket.mp3')
+  audio.play()
   actualizarHTML(data.ultimos4)
 })
 
